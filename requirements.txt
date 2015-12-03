@@ -1,0 +1,41 @@
+1)An editable search is needed which can return A Level grades of a student as well as their reference
+ The search can be done by university applied or attended, name, subject taken, grade achieved or university course.
+ This requirement solves problem 4 in section 1.3.2 as it removes the need for a paper based search and uses a much faster computer based search.
+ 
+2)The ability to add details of a new student into the database.
+ These details include: name, gender, religion, email, date of birth, GSCE grades, A Level grades and universities applied for.
+ This helps to solve problem 1 in section 1.3.2 as student data can be stored in one central digital file which reduces paper and storage required.
+
+3)A backup of the student database and any reference documents taken periodically
+ This solves problem 5 in section 1.3.2 as a computer backup would reduce the cost and storage required.
+
+4)The ability to edit existing stored details of a student and overwrite this into the database.
+ This process needs to be the same as adding a new student to save confusion and learning a new process.
+ This solves problem 6 in section 1.3.2 as storing and updating student data in one place reduces the confusion with multiple versions and always stores the latest version.
+
+5)Export function for student records for archiving each year.
+ This helps to solve problem 5 in section 1.3.2 as it adds another level of backup to the system which reduces the chance of data loss.
+
+6)The ability to add in a student’s personal statement to their record in the database.
+ Adding in the personal statement will help keep all the information in one place, helping to solve problem 6 in section 1.3.2
+
+7)Deferred entry option, keep record open for another year
+
+8)Popup to remind teachers about student deadlines
+
+9)A word count for the personal statement and the reference so staff can easily see how far from the limit they are.
+
+10) A printable version of the reference so students can proof read them.
+
+11) The use of combo boxes to limit the options that users can enter into fields.
+ Allow an ‘other’ option that will allow users to create a new option if it isn’t listed.
+
+12) The ability to add comments to a student’s personal statement or reference so other staff members can view adjustments that are needed.
+
+13) A printable progress list that allows staff members to view the status of every student’s application.
+ Staff can also view comments here added to any student’s record.
+
+14) Three separate logins for the different levels of staff accessing the system.
+ An administrator login can add new users and specify their access level. 
+
+15) Alerts sent to teachers to remind them about upcoming deadlines.

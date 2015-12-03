@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5DC4C14-AF13-4D02-A4FF-30A1909C723A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UCASSys</RootNamespace>
+    <AssemblyName>UCASSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>UCASSys.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>UCASSys.exe.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>51A7A9184F9DA58F0D676BE2395E4AF1717550DA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>UCASSys_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>UCASSys_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28No Build%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug %28No Build%29\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28No Build%29|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug %28No Build%29\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug %28No Build%29|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug %28No Build%29\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Core.1.1.0.0\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.ShellExtensions">
+      <HintPath>..\packages\Microsoft.WindowsAPICodePack-Shell.1.1.0.0\lib\Microsoft.WindowsAPICodePack.ShellExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ApplicationEvents.cs" />
+    <Compile Include="Classes\Controllers\Config.cs" />
+    <Compile Include="Classes\Controllers\Log.cs" />
+    <Compile Include="Classes\Controllers\Notification.cs" />
+    <Compile Include="Classes\Controllers\Taskbar.cs" />
+    <Compile Include="Classes\Controllers\Registry.cs" />
+    <Compile Include="Classes\Database\Interface.cs" />
+    <Compile Include="Classes\Database\Manager.cs" />
+    <Compile Include="Classes\DateTime.cs" />
+    <Compile Include="Classes\Items\AddressItem.cs" />
+    <Compile Include="Classes\Items\ApplicationItem.cs" />
+    <Compile Include="Classes\Items\ConfigItem.cs" />
+    <Compile Include="Classes\Items\dropDownItem.cs" />
+    <Compile Include="Classes\Items\ExamBoardItem.cs" />
+    <Compile Include="Classes\Items\TaskListItem.cs" />
+    <Compile Include="Classes\Items\TutorGroupItem.cs" />
+    <Compile Include="Classes\Items\GenderItem.cs" />
+    <Compile Include="Classes\Items\NotificationItem.cs" />
+    <Compile Include="Classes\Items\QualificationItem.cs" />
+    <Compile Include="Classes\Items\ReferenceItem.cs" />
+    <Compile Include="Classes\Items\ReligionItem.cs" />
+    <Compile Include="Classes\Items\StudentItem.cs" />
+    <Compile Include="Classes\Items\YearOfEntryItem.cs" />
+    <Compile Include="Classes\Lists\ExamBoard.cs" />
+    <Compile Include="Classes\Lists\Grades.cs" />
+    <Compile Include="Classes\Lists\Level.cs" />
+    <Compile Include="Classes\Lists\Month.cs" />
+    <Compile Include="Classes\Lists\Status.cs" />
+    <Compile Include="Classes\Lists\Tutor.cs" />
+    <Compile Include="Classes\Lists\Gender.cs" />
+    <Compile Include="Classes\Lists\Religion.cs" />
+    <Compile Include="Classes\Lists\Year.cs" />
+    <Compile Include="Classes\Lists\YearOfEntry.cs" />
+    <Compile Include="Classes\ListViewColumnSorter.cs" />
+    <Compile Include="Classes\NativeMethods.cs" />
+    <Compile Include="Classes\StartupArgs.cs" />
+    <Compile Include="Classes\Timeout.cs" />
+    <Compile Include="Classes\SetupDatabase.cs" />
+    <Compile Include="Classes\Status.cs" />
+    <Compile Include="Classes\StatusMessage.cs" />
+    <Compile Include="Classes\StringEventArgs.cs" />
+    <Compile Include="Classes\TaskDialog.cs" />
+    <Compile Include="Classes\Controllers\User.cs" />
+    <Compile Include="Classes\Validation.cs" />
+    <Compile Include="Forms\Admin\Gender\Dialog.Gender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\Gender\Dialog.Gender.Designer.cs">
+      <DependentUpon>Dialog.Gender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\Religion\Dialog.Religion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\Religion\Dialog.Religion.Designer.cs">
+      <DependentUpon>Dialog.Religion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\YoE\Dialog\TutorGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\YoE\Dialog\TutorGroup.Designer.cs">
+      <DependentUpon>TutorGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\YoE\Dialog\YearOfEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\YoE\Dialog\YearOfEntry.Designer.cs">
+      <DependentUpon>YearOfEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\TaskList.cs" />
+    <Compile Include="Forms\Setup\confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setup\confirm.Designer.cs">
+      <DependentUpon>confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setup\details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setup\details.Designer.cs">
+      <DependentUpon>details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setup\password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setup\password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\information.Designer.cs">
+      <DependentUpon>information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\qualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\qualification.Designer.cs">
+      <DependentUpon>qualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\quickAddQual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\quickAddQual.Designer.cs">
+      <DependentUpon>quickAddQual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\dialog\open.Designer.cs">
+      <DependentUpon>open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admin\Gender\Dialog.Gender.resx">
+      <DependentUpon>Dialog.Gender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\Religion\Dialog.Religion.resx">
+      <DependentUpon>Dialog.Religion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\YoE\Dialog\TutorGroup.resx">
+      <DependentUpon>TutorGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\YoE\Dialog\YearOfEntry.resx">
+      <DependentUpon>YearOfEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setup\confirm.resx">
+      <DependentUpon>confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setup\details.resx">
+      <DependentUpon>details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setup\password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\dialog\information.resx">
+      <DependentUpon>information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\dialog\qualification.resx">
+      <DependentUpon>qualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\dialog\quickAddQual.resx">
+      <DependentUpon>quickAddQual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\dialog\open.resx">
+      <DependentUpon>open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="banner.jpg" />
+    <None Include="banner.png" />
+    <Content Include="login_banner.png" />
+    <Content Include="Resources\default.usys">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\help.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\reference.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="UCASSys.exe.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UCASSys_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\Admin\Qualifications\" />
+    <Folder Include="Forms\Admin\Universities\" />
+    <Folder Include="Forms\Admin\Users\" />
+    <Folder Include="Forms\Applications\" />
+    <Folder Include="Forms\References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

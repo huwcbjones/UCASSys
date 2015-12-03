@@ -1,0 +1,15 @@
+﻿{
+    "label_general_option": "Option name.",
+    "label_general_value": "Setting you'd like.",
+    "label_general_default": "Use the default setting as chosen by your UCAS System administrator.",
+    "label_data_option": "Option name.",
+    "label_data_value": "Setting you'd like.",
+    "label_data_default": "Use the default setting as chosen by your UCAS System administrator.",
+    "label_advanced_option": "Option name.",
+    "label_advanced_value": "Setting you'd like.",
+    "label_advanced_default":  "Use the default setting as chosen by your UCAS System administrator.",
+    "label_dataFolder": "Where UCAS System stores its data.",
+
+    "label_notify": "How often the application checks for notifications.",
+    "label_adv_reset": "Resets your settings and starts UCAS System from new."
+}
