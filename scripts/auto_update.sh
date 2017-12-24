@@ -1,14 +1,18 @@
 #!/bin/bash
 
+data_directory="data"
 base_url="https://register.ofqual.gov.uk/Home/Download?category="
+
+qualifications_directory="${data_directory}/qualifications"
+exam_boards_directory="${data_directory}/exam_boards"
+
 qualifications_url="${base_url}Qualifications"
-#qualifications_url="http://localhost:8081/qualifications.csv"
 exam_boards_url="${base_url}Organisations"
 
-mkdir -p data/qualifications;
-mkdir -p data/exam_boards;
+mkdir -p ${qualifications_directory};
+mkdir -p ${exam_boards_directory};
 
-date=$(date '+%Y%m%d-%H%M%S');
+date=$(date '+%Y%m%d-%H%M');
 
 function processFile(){
   dir=$1
@@ -39,7 +43,7 @@ function processFile(){
 }
 
 echo "Processing exam boards..."
-processFile "data/exam_boards" ${exam_boards_url}
+processFile ${exam_boards_directory} ${exam_boards_url}
 
 echo "Processing qualifications..."
-processFile "data/qualifications" ${qualifications_url}
+processFile ${qualifications_directory} ${qualifications_url}
